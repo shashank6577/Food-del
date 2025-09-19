@@ -155,6 +155,11 @@ def parse_from_mongo(item):
     return item
 
 
+# Basic Routes
+@api_router.get("/")
+async def root():
+    return {"message": "SmartLogix API is running"}
+
 # Customer Routes
 @api_router.post("/customers", response_model=Customer)
 async def create_customer(customer: CustomerCreate):
