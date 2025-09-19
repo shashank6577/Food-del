@@ -7,6 +7,7 @@ import AdminDashboard from "./components/AdminDashboard";
 import { Button } from "./components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/card";
 import { Truck, Users, ShoppingCart, BarChart3 } from "lucide-react";
+import { Toaster } from "sonner";
 
 const Navigation = () => {
   const location = useLocation();
